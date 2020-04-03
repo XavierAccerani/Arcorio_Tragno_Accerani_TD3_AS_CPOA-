@@ -30,7 +30,7 @@ public class StartPoint {
 			a = scan.nextInt();
 			System.out.println("\nSaisissez la deuxième valeur : \n");
 			b = scan.nextInt();
-			System.out.println("Le résultat est : " + maths.addition(a, b));
+			System.out.println("Le résultat de " + a + " + " + b + " est : " + maths.addition(a, b));
 			break;
 
 		case "b":
@@ -38,7 +38,7 @@ public class StartPoint {
 			a = scan.nextInt();
 			System.out.println("\nSaisissez la deuxième valeur : \n");
 			b = scan.nextInt();
-			System.out.println("Le résultat est : " + maths.soustraction(a, b));
+			System.out.println("Le résultat de " + a + " - " + b + " est : " + maths.soustraction(a, b));
 			break;
 
 		case "c":
@@ -46,7 +46,7 @@ public class StartPoint {
 			a = scan.nextInt();
 			System.out.println("\nSaisissez la deuxième valeur : \n");
 			b = scan.nextInt();
-			System.out.println("Le résultat est : " + maths.multiplication(a, b));
+			System.out.println("Le résultat de " + a + " x " + b + " est : " + maths.multiplication(a, b));
 			break;
 
 		case "d":
@@ -54,15 +54,8 @@ public class StartPoint {
 			a = scan.nextInt();
 			System.out.println("\nSaisissez la deuxième valeur : \n");
 			b = scan.nextInt();
-			System.out.println("Le résultat est : " + maths.division(a, b));
+			System.out.println("Le résultat de " + a + " / " + b + " est " + maths.division(a, b));
 			break;
 		}
-		/**
-		 * Points à améliorer :
-		 * Fonctions ?
-		 * Améliorer l'affichage (rappel de l'opération sélectionnée + des termes etc.)
-		 * A mettre dans une boucle while pour permettre à l'utilisateur de refaire des opérations
-		 * Suggestions ?
-		 */
 	}
 }
