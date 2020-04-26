@@ -10,5 +10,4 @@ public abstract class Compte {
 	public void crediter(double montant) {
 		
 	}
-	
 }
