@@ -7,7 +7,7 @@ public abstract class Compte {
 	
 	public abstract void débiter(double montant);
 	
-	public void crediter(double monant) {
+	public void crediter(double montant) {
 		
 	}
 	
