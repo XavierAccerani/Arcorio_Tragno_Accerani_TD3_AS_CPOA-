@@ -1,6 +1,7 @@
 package com.iut.as.daofactory;
 
 import com.iut.as.enumeration.EPersistance;
+import com.iut.as.interfaces.IDaoClient;
 
 public abstract class DaoFactory {
 	

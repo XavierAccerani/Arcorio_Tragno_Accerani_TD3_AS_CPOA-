@@ -1,4 +1,4 @@
-package com.iut.as.factory;
+package com.iut.as.modelefactory;
 
 import java.util.ArrayList;
 import java.util.List;
