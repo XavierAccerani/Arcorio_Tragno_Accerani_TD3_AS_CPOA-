@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Client {
 	
 	private String numeroClient;
-	private String client;
+	private String adresse;
 	private String nom;
 	private ArrayList<Compte> titulaireDeCompte;
 	

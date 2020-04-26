@@ -7,14 +7,7 @@ public abstract class Compte {
 	
 	public abstract void débiter(double montant);
 	
-<<<<<<< HEAD
 	public void crediter(double montant) {
 		
 	}
-=======
-	public void crediter(double monant) {
-		
-	}
-	
->>>>>>> refs/remotes/origin/master
 }

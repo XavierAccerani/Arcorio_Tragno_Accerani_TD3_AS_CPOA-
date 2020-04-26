@@ -7,7 +7,7 @@ public class Bank {
 	private ArrayList<Client> listeClients;
 	private ArrayList<Compte> listeComptes;
 	
-<<<<<<< HEAD
+	
 	public void retrait(String numCompte, String nomClient, double montant) {
 		
 	}
@@ -31,18 +31,4 @@ public class Bank {
 	public double conversionToEuro(double montant) {
 		return 1.0;
 	}
-=======
-	public void retrait(String num_compte, String nom_client, double montant) {
-		
-	}
-	
-	public void depot(String num_compte, String nom_client, double montant) {
-		
-	}
-	
-	public void ouverture_compte() {
-		
-	}
-	
->>>>>>> refs/remotes/origin/master
 }
