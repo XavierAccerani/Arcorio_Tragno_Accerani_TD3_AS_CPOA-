@@ -5,7 +5,7 @@ public abstract class Compte {
 	protected double solde;
 	protected String numeroCompte;
 	
-	public abstract void débiter(double montant);
+	public abstract void debiter(double montant);
 	
 	public void crediter(double montant) {
 		

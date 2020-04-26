@@ -5,6 +5,6 @@ public class CompteAvecDecouvert extends Compte {
 	private double decouvertAutorise;
 
 	@Override
-	public void débiter(double montant) {
+	public void debiter(double montant) {
 	}
 }
