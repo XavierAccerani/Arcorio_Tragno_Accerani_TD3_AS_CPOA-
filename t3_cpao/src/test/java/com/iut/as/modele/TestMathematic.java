@@ -102,25 +102,25 @@ public class TestMathematic {
 	// Ajout d'un test unitaire pour vérifier la levée d'exception si un des paramètres est null.
 	@Test(expected = MathematicException.class)
 	public void testAdditionWithNull() {
-		assertEquals(5, maths.addition(null, 4));
-		assertEquals(5, maths.addition(-4, null));
-		assertEquals(5, maths.addition(null, null));
+		assertEquals(5, maths.addition(null, 4).intValue()); // Parce qu'on a changé le type de paramètre / retour !
+		assertEquals(5, maths.addition(-4, null).intValue());
+		assertEquals(5, maths.addition(null, null).intValue());
 	}
 	
 	// Ajout d'un test unitaire pour vérifier la levée d'exception si un des paramètres est null.
 	@Test(expected = MathematicException.class)
 	public void testSoustractionWithNull() {
-		assertEquals(4, maths.soustraction(null, 2));
-		assertEquals(4, maths.soustraction(-2, null));
-		assertEquals(4, maths.soustraction(null, null));
+		assertEquals(4, maths.soustraction(null, 2).intValue());
+		assertEquals(4, maths.soustraction(-2, null).intValue());
+		assertEquals(4, maths.soustraction(null, null).intValue());
 	}
 
 	// Ajout d'un test unitaire pour vérifier la levée d'exception si un des paramètres est null.
 	@Test(expected = MathematicException.class)
 	public void testMultiplicationWithNull() {
-		assertEquals(10, maths.multiplication(null, 5));
-		assertEquals(10, maths.multiplication(-5,  null));
-		assertEquals(10, maths.multiplication(null, null));
+		assertEquals(10, maths.multiplication(null, 5).intValue());
+		assertEquals(10, maths.multiplication(-5,  null).intValue());
+		assertEquals(10, maths.multiplication(null, null).intValue());
 	}
 
 }
