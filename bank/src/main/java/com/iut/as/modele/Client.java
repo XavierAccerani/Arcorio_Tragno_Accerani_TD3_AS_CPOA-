@@ -17,7 +17,7 @@ public class Client {
 		this.nom = nom;
 	}
 	
-	// Pour tests, à virer...
+	// Pour tests
 	public Client() {}
 	
 	// Getters - Setters
