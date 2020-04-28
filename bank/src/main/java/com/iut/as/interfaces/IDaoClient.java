@@ -2,10 +2,11 @@ package com.iut.as.interfaces;
 
 import java.util.List;
 
-import com.iut.as.modele.Client;
+public interface IDaoClient<T> extends IDao<T> {
 
-public interface IDaoClient extends IDao<Client> {
+	public abstract void Create(T objet);
+	public abstract void Update(T objet);
+	public abstract void Delete(T objet);
 
-	List<Client> getListeClient();
 
 }
