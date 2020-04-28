@@ -7,6 +7,7 @@ public class CompteSansDecouvert extends Compte {
 	}
 
 	@Override
-	public void debiter(double montant) {		
+	public void debiter(double montant) {
+		// A coder
 	}
 }

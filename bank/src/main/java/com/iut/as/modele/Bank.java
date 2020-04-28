@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+<<<<<<< HEAD
 import com.iut.as.interfaces.IDaoBank;
 
 // ATTENTION : il faudra absolument gérer les erreurs pour les Optional !
 
 public class Bank implements IDaoBank{
+=======
+public class Bank {
+>>>>>>> refs/remotes/origin/master
 	
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
-	
-	// Pas forcément nécessaire, les clients possèdent une liste de comptes
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
 	
 	private static Bank banque;
