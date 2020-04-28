@@ -4,15 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-<<<<<<< HEAD
 import com.iut.as.interfaces.IDaoBank;
 
 // ATTENTION : il faudra absolument gérer les erreurs pour les Optional !
 
 public class Bank implements IDaoBank{
-=======
-public class Bank {
->>>>>>> refs/remotes/origin/master
+
+
 	
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
@@ -92,6 +90,24 @@ public class Bank {
 
 	@Override
 	public void OuvertureCompte(String nom_client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Create(Object objet) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(Object objet) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Object objet) {
 		// TODO Auto-generated method stub
 		
 	}
