@@ -3,17 +3,9 @@ package com.iut.as.modele;
 import java.util.ArrayList;
 import java.util.Optional;
 
-import com.iut.as.interfaces.IDaoBank;
-
 // ATTENTION : gérer les erreurs pour les Optional !
 
-<<<<<<< HEAD
-public class Bank implements IDaoBank{
-
-
-=======
 public class Bank {
->>>>>>> 33d93e58391258b1adea27334500e87cce341d5d
 	
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
@@ -89,32 +81,4 @@ public class Bank {
 	public double conversionToEuro(double montant) {
 		return 1.0;
 	}
-<<<<<<< HEAD
-
-
-	@Override
-	public void OuvertureCompte(String nom_client) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Create(Object objet) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Update(Object objet) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Delete(Object objet) {
-		// TODO Auto-generated method stub
-		
-	}
-=======
->>>>>>> 33d93e58391258b1adea27334500e87cce341d5d
 }
