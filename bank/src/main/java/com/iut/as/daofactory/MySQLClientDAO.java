@@ -11,16 +11,16 @@ import com.iut.as.modele.Client;
 public class MySQLClientDAO implements IDaoClient<Client> {
 
 	private static MySQLClientDAO instance;
-	
-	private MySQLClientDAO() {}
-	
+
+	private MySQLClientDAO() {
+	}
+
 	public static MySQLClientDAO getInstance() {
-		if(instance == null) {
+		if (instance == null) {
 			instance = new MySQLClientDAO();
 		}
 		return instance;
 	}
-
 
 	@Override
 	public void Create(Client client) {
@@ -39,7 +39,6 @@ public class MySQLClientDAO implements IDaoClient<Client> {
 		}
 	}
 
-
 	@Override
 	public void Update(Client client) {
 		// TODO Auto-generated method stub
@@ -50,8 +49,6 @@ public class MySQLClientDAO implements IDaoClient<Client> {
 	public void Delete(Client client) {
 		// TODO Auto-generated method stub
 
-
 	}
-
 
 }
