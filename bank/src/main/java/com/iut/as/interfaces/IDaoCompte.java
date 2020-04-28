@@ -1,5 +1,5 @@
 package com.iut.as.interfaces;
 
-public interface IDaoCompte<T> extends IDao<T>{
+public interface IDaoCompte<T> extends IDao<T> {
 
 }
