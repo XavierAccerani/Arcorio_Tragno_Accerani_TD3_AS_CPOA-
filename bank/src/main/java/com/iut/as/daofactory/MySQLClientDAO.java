@@ -1,49 +1,36 @@
 package com.iut.as.daofactory;
 
-import java.util.List;
-
 import com.iut.as.interfaces.IDaoClient;
 import com.iut.as.modele.Client;
 
+public class MySQLClientDAO implements IDaoClient<Client> {
 
-public class MySQLClientDAO implements IDaoClient {
-
-
-	public static IDaoClient getInstance() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Client read(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Client> getList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void Create(Client objet) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Update(Client objet) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void Delete(Client objet) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	private static MySQLClientDAO instance;
 	
+	private MySQLClientDAO() {}
+	
+	public static MySQLClientDAO getInstance() {
+		if(instance == null) {
+			instance = new MySQLClientDAO();
+		}
+		return instance;
+	}
 
+	@Override
+	public void Create(Client client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(Client client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Client client) {
+		// TODO Auto-generated method stub
+		
+	}
 }

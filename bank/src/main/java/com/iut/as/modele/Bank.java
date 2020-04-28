@@ -5,9 +5,9 @@ import java.util.Optional;
 
 import com.iut.as.interfaces.IDaoBank;
 
-// ATTENTION : il faudra absolument gérer les erreurs pour les Optional !
+// ATTENTION : gérer les erreurs pour les Optional !
 
-public class Bank implements IDaoBank {
+public class Bank {
 	
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
@@ -26,11 +26,8 @@ public class Bank implements IDaoBank {
 	private Bank() {}
 	
 
-
-	@Override
-	public void OuvertureCompte(String nom_client) {
-		// TODO Auto-generated method stub
-		
+	// Méthode d'ouverture de compte
+	public void ouvertureCompte(String nom_client) {
 	}
 	
 	// Méthode d'ajout d'un client
