@@ -3,13 +3,9 @@ package com.iut.as.modele;
 import java.util.ArrayList;
 import java.util.Optional;
 
-// ATTENTION : il faudra absolument gérer les erreurs pour les Optional !
-
 public class Bank {
 	
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
-	
-	// Pas forcément nécessaire, les clients possèdent une liste de comptes
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
 	
 	private static Bank banque;
