@@ -27,7 +27,7 @@ public class MySQLClientDAO implements IDaoClient<Client> {
 		try {
 			Connection laConnexion = Connexion.creeConnexion();
 			PreparedStatement requete = laConnexion
-					.prepareStatement("INSERT INTO users (numeroClient, adresse, nom) VALUES(?,?,?)");
+					.prepareStatement("INSERT INTO client (numeroClient, adresse, nom) VALUES(?,?,?)");
 			requete.setString(1, client.getNumeroClient());
 			requete.setString(2, client.getAdresse());
 			requete.setString(3, client.getNom());
@@ -41,14 +41,34 @@ public class MySQLClientDAO implements IDaoClient<Client> {
 
 	@Override
 	public void Update(Client client) {
-		// TODO Auto-generated method stub
-
+		try {
+			Connection laConnexion = Connexion.creeConnexion();
+			PreparedStatement requete = laConnexion
+					.prepareStatement("UPDATE client SET nom=?, prenom=? WHERE numeroClient=?");
+			requete.setString(1, client.getNumeroClient());
+			requete.setString(2, client.getAdresse());
+			requete.setString(3, client.getNom());
+			requete.executeUpdate();
+			if (laConnexion != null)
+				laConnexion.close();
+		} catch (SQLException sqle) {
+			System.out.println("Pb de màj de la BdD " + sqle.getMessage());
+		}
 	}
 
 	@Override
 	public void Delete(Client client) {
-		// TODO Auto-generated method stub
+		try {
+			Connection laConnexion = Connexion.creeConnexion();
 
+			PreparedStatement requete = laConnexion.prepareStatement("DELETE FROM client WHERE numeroClient=?");
+			requete.setString(1, client.getNumeroClient());
+			requete.executeUpdate();
+			if (laConnexion != null)
+				laConnexion.close();
+		} catch (SQLException sqle) {
+			System.out.println("Pb de màj de la Bdd " + sqle.getMessage());
+		}
 	}
 
 }

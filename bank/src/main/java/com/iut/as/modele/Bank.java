@@ -6,11 +6,8 @@ import java.util.Optional;
 // ATTENTION : gérer les erreurs pour les Optional !
 
 public class Bank {
-<<<<<<< HEAD
 
-=======
 	
->>>>>>> 35936ddf9e911b2d90b10b9e72fe5bd8ef26bacd
 	private ArrayList<Client> listeClients = new ArrayList<Client>();
 	private ArrayList<Compte> listeComptes = new ArrayList<Compte>();
 
@@ -82,8 +79,5 @@ public class Bank {
 	public double conversionToEuro(double montant) {
 		return 1.0;
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 35936ddf9e911b2d90b10b9e72fe5bd8ef26bacd
 }
