@@ -14,21 +14,6 @@ public class TestBank {
 	
 	@Test
 	public void testRetraitAvecClientExistant() {
-		
-	}
-	
-	@Test
-	public void testRetraitAvecClientInexistant() {
-		
-	}
-	
-	@Test
-	public void testRetraitAvecCompteExistant() {
-		
-	}
-	
-	@Test
-	public void testRetraitAvecCompteInexistant() {
-		
+		// Tests à implémenter
 	}
 }

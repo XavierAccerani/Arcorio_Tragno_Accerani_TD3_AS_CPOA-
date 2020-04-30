@@ -27,14 +27,14 @@ public class MySQLCompteDAO implements IDaoCompte<Compte> {
 		try {
 			Connection laConnexion = Connexion.creeConnexion();
 			PreparedStatement requete = laConnexion
-					.prepareStatement("INSERT INTO compte (numeroCompte, solde) VALUES(?,?)");
-			requete.setString(1, compte.getNumeroCompte());
-			requete.setDouble(2, compte.getSolde());
+					.prepareStatement("INSERT INTO Compte (solde, numeroCompte) VALUES(?,?)");
+			requete.setDouble(1, compte.getSolde());
+			requete.setString(2, compte.getNumeroCompte());
 			requete.executeUpdate();
 			if (laConnexion != null)
 				laConnexion.close();
 		} catch (SQLException sqle) {
-			System.out.println("Probleme select" + sqle.getMessage());
+			System.out.println("Problème dans le Select " + sqle.getMessage());
 		}
 	}
 
@@ -42,14 +42,14 @@ public class MySQLCompteDAO implements IDaoCompte<Compte> {
 	public void Update(Compte compte) {
 		try {
 			Connection laConnexion = Connexion.creeConnexion();
-			PreparedStatement requete = laConnexion.prepareStatement("UPDATE compte SET solde=? WHERE numeroCompte=?");
+			PreparedStatement requete = laConnexion.prepareStatement("UPDATE Compte SET solde=? WHERE numeroCompte=?");
 			requete.setDouble(1, compte.getSolde());
 			requete.setString(2, compte.getNumeroCompte());
 			requete.executeUpdate();
 			if (laConnexion != null)
 				laConnexion.close();
 		} catch (SQLException sqle) {
-			System.out.println("Pb de màj de la BdD " + sqle.getMessage());
+			System.out.println("Problème d'update de la BdD " + sqle.getMessage());
 		}
 	}
 
@@ -57,13 +57,13 @@ public class MySQLCompteDAO implements IDaoCompte<Compte> {
 	public void Delete(Compte compte) {
 		try {
 			Connection laConnexion = Connexion.creeConnexion();
-			PreparedStatement requete = laConnexion.prepareStatement("DELETE FROM compte WHERE numeroCompte=?");
+			PreparedStatement requete = laConnexion.prepareStatement("DELETE FROM Compte WHERE numeroCompte=?");
 			requete.setString(1, compte.getNumeroCompte());
 			requete.executeUpdate();
 			if (laConnexion != null)
 				laConnexion.close();
 		} catch (SQLException sqle) {
-			System.out.println("Pb de màj de la Bdd " + sqle.getMessage());
+			System.out.println("Problème d'update de la BdD " + sqle.getMessage());
 		}
 	}
 }
