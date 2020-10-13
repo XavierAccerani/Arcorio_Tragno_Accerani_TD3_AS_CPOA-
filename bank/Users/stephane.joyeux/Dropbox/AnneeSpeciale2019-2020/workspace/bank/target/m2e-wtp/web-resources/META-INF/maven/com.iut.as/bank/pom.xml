@@ -23,7 +23,7 @@
 		
 		<!-- Numéro des versions -->
 		<servlets.version>3.1.0</servlets.version>
-		<junit.version>4.7</junit.version>
+		<junit.version>4.13.1</junit.version>
 
 	</properties>
 
